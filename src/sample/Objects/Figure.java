@@ -25,5 +25,5 @@ public abstract class Figure implements Serializable {
 
         }
     }
-    public  abstract Figure factor();
+    public  abstract Figure factor();  //возвращает фигуру данного типа
 }

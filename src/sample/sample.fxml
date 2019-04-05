@@ -11,26 +11,25 @@
    <children>
       <Pane prefHeight="167.0" prefWidth="1000.0" style="-fx-background-color: silver;">
          <children>
-            <Button layoutX="388.0" layoutY="75.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseSquare" prefHeight="50.0" prefWidth="50.0" >
+            <Button layoutX="160.0" layoutY="50.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseSquare" prefHeight="50.0" prefWidth="100.0" text="Квадрат" >
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font></Button>
-            <Button fx:id="Line1" layoutX="450.0" layoutY="75.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseLine" prefHeight="50.0" prefWidth="50.0" styleClass="button" text="Очистить"/>
-            <ColorPicker fx:id="GridColor" layoutX="86.0" layoutY="8.0" onAction="#ColorSetPen" />
-            <Label layoutX="14.0" layoutY="13.0" text="Контур" />
-            <ColorPicker fx:id="GridColorFill" disable="true" editable="true" layoutX="86.0" layoutY="39.0" onAction="#ColorSetFill" />
-            <Label disable="true" layoutX="10.0" layoutY="44.0" text="Заливка" />
-            <Button layoutX="669.0" layoutY="75.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseCircle" prefHeight="50.0" prefWidth="50.0" styleClass="button" text="Очистить" />
-            <Button layoutX="594.0" layoutY="75.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseTriangle" prefHeight="50.0" prefWidth="50.0" text="Очистить" />
-            <Button layoutX="518.0" layoutY="75.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseRectangle" prefHeight="50.0" prefWidth="50.0" text="Очистить" />
-            <Button layoutX="325.0" layoutY="75.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#ChooseRightArrow" prefHeight="50.0" prefWidth="50.0">
-               <stylesheets>
+            <Button fx:id="Line1" layoutX="290.0" layoutY="50.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseLine" prefHeight="50.0" prefWidth="50.0" styleClass="button" text="Линия"  />
+            <ColorPicker fx:id="GridColor" layoutX="356.0" layoutY="8.0" onAction="#ColorSetPen" />
+            <Label layoutX="294.0" layoutY="13.0" text="Контур:" />
+            <ColorPicker fx:id="GridColorFill" disable="true" editable="true" layoutX="106.0" layoutY="139.0" onAction="#ColorSetFill" />
 
+            <Button layoutX="680.0" layoutY="50.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseCircle" prefHeight="50.0" prefWidth="50.0" styleClass="button" text="Овал"  />
+            <Button layoutX="550.0" layoutY="50.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseTriangle" prefHeight="50.0" prefWidth="50.0" text="Треугольник" />
+            <Button layoutX="420.0" layoutY="50.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseRectangle" prefHeight="50.0" prefWidth="50.0" text="Прямоугольник" />
+            <Button layoutX="30.0" layoutY="50.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#ChooseRightArrow" prefHeight="50.0" prefWidth="50.0" text="Ромб" >
+               <stylesheets>
                </stylesheets></Button>
-            <Button layoutX="847.0" layoutY="65.0" mnemonicParsing="false" onAction="#Clear" prefHeight="43.0" prefWidth="106.0" styleClass="buttonClear"  text="Очистить" />
-            <Button layoutX="847.0" layoutY="13.0" mnemonicParsing="false" onAction="#SaveAll" prefHeight="43.0" prefWidth="106.0" styleClass="buttonSave"  text="Сохранить" />
-            <Button layoutX="728.0" layoutY="13.0" mnemonicParsing="false" onAction="#ReadAll" prefHeight="43.0" prefWidth="106.0" styleClass="button1"  text="Загрузить" />
-            <Button layoutX="738.0" layoutY="65.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="43.0" prefWidth="96.0" styleClass="buttonClear"  text="Отмена" />
+            <Button layoutX="898.0" layoutY="65.0" mnemonicParsing="false" onAction="#Clear" prefHeight="43.0" prefWidth="70.0" styleClass="buttonClear"  text="Очистить" />
+            <Button layoutX="898.0" layoutY="13.0" mnemonicParsing="false" onAction="#SaveAll" prefHeight="43.0" prefWidth="70.0" styleClass="buttonSave" text="Сохранить" />
+            <Button layoutX="810.0" layoutY="13.0" mnemonicParsing="false" onAction="#ReadAll" prefHeight="43.0" prefWidth="70.0" styleClass="button1"  text="Загрузить" />
+            <Button layoutX="810.0" layoutY="65.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="43.0" prefWidth="70.0" styleClass="buttonClear"  text="Отмена" />
          </children>
       </Pane>
       <Pane prefHeight="728.0" prefWidth="1000.0" style="-fx-background-color: white;">

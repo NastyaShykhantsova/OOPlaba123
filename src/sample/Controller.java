@@ -14,7 +14,6 @@ import javafx.scene.paint.Paint;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import sample.Objects.*;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -127,8 +126,6 @@ public class Controller {
         }
     }
     public void SaveAll(ActionEvent actionEvent) throws Exception {  //серялизация в бинарный файл
-
-
         ArrayList<Figure> all= allFigure.getAll();
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("figure.dat")))
         {
@@ -139,13 +136,10 @@ public class Controller {
 
             System.out.println(ex.getMessage());
         }
-
-
     }
 
     public void ReadAll(ActionEvent actionEvent) throws IOException {   //чтение из файла
         clear();
-
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("figure.dat")))
         {
             allFigure.setAll((ArrayList<Figure>)ois.readObject());

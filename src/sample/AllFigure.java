@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class AllFigure {
 
-    private  ArrayList<Figure> All = new ArrayList<Figure>(); ;
+    private  ArrayList<Figure> All = new ArrayList<Figure>();
 
     public ArrayList<Figure> getAll() {
         return All;
