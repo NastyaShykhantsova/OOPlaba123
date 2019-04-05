@@ -3,7 +3,9 @@ package sample.Objects;
 import javafx.scene.canvas.Canvas;
 import sample.Point;
 
-public abstract class Figure {
+import java.io.Serializable;
+
+public abstract class Figure implements Serializable {
 
     public Point fist= new Point();
     public Point second =new Point();
